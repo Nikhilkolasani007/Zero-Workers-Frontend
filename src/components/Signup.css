@@ -1,0 +1,84 @@
+.body{
+    background-color: white;
+}
+.bg {
+    background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+    box-shadow: 10px 10px 10px wheat;
+    display: flex;
+    margin: 20px 20px;
+    border-radius: 12px;
+}
+.left_block{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.left_block h1{
+    color: white;
+}
+@keyframes shrinkRightBlock {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 40%;
+  }
+}
+.right_block{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    border-radius: 12px;
+    padding: 20px 20px;
+    animation: shrinkRightBlock 1.5s ease-out forwards;
+}
+.ac{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.form{
+    display: block;
+}
+.in_nm{
+    font-weight: bold;
+}
+
+/* 📱 Small Mobiles (like iPhone SE, older phones) */
+@media (max-width: 480px) and (max-height: 800px) {
+    .left_block{
+        width: 0%;
+    }
+    .right_block{
+        width: 100%;
+        animation: none;
+    }
+}
+
+/* 📱 Large Phones / Small Tablets (like Pixel 7, iPhone 14 Pro Max) */
+@media (max-width: 768px) and (max-height: 1024px) {
+    .left_block{
+        width: 0%;
+    }
+    .right_block{
+        width: 100%;
+        animation: none;
+    }
+}
+
+/* 💻 Small Laptops (like 13” notebooks) */
+@media (max-width: 1024px) and (max-height: 1366px) {
+    .left_block{
+        width: 0%;
+    }
+    .right_block{
+        width: 100%;
+        animation: none;
+    }
+}
